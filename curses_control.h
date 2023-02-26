@@ -1,0 +1,12 @@
+void set_up_curses();
+void refresh_main_pad(int amount_to_scroll = 0, bool resized = false);
+void refresh_chat_pad(int amount_to_scroll = 0, bool resized = false);
+void resize_all_windows(int color);
+void refresh_all_windows();
+void print_command_prompt(std::string message);
+void print_error(std::string error_message);
+void update_connected_rooms();
+void update_player_list();
+void clear_prompt_area();
+void update_status_bar();
+void print_to_chat(char* sender, char* msg);
