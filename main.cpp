@@ -1,7 +1,6 @@
 // Created by Coleby Kauffman | Spring 2022 | CS-435 Networks
 // Run like this:  ./lurkman address port
 // packages needed (debian): libncurses5-dev, libncursesw5-dev, libncurses-dev, libgraph-easy-perl, libgraphviz-dev
-// build like this: g++ lurk_client.cpp -o lurkman -O3 -lncursesw -pthread -lgvc -lcgraph
 
 #include<sys/socket.h>
 #include<sys/types.h>
