@@ -348,7 +348,7 @@ void* listen_to_server(void* arg) {
         } else if (type == 14) { // VERSION
             handle_version();
         } else { // Something the server should not send
-            print_error(std::string("Error! The server has sent something strange (type ") + type + std::string(")."));
+            print_error(std::string("Error! The server has sent something strange (type ") + type + std::string(").\n"));
             char buf[1024];
             while (1024 == read(skt, buf, 1024)) {};
         }
